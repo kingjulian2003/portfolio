@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .responsive-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .responsive-img:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-img {
+      border-radius: 4px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="responsive-container">
+  <img class="responsive-img" 
+       src="photo/photo.jpg" 
+       alt="Exemple d'image responsive"
+       loading="lazy">
+</div>
+
+</body>
+</html>
